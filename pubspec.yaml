@@ -10,9 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  js: ^0.6.3
-  scan:
-    path: ./packages/flutter_scan 
+  js: ^0.6.3 
 
 
 dev_dependencies:
@@ -24,8 +22,8 @@ flutter:
       android:
         package: net.touchcapture.qr.flutterqr
         pluginClass: FlutterQrPlugin
+        package: com.chavesgu.scan
+        pluginClass: ScanPlugin
       ios:
         pluginClass: FlutterQrPlugin
-#      web:
-#        pluginClass: FlutterQrPlugin
-#        fileName: flutter_qr_web.dart
+        pluginClass: ScanPlugin
